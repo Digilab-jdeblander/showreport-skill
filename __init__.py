@@ -12,7 +12,7 @@ class Showreports(MycroftSkill):
     def handle_showreports(self, message):
         self.speak_dialog('Opening the report')
         dir_file = "/home/sopra/Downloads/OpenPowerBi.html"
-        webbrowser.open('file://' + dir_file + '?direct=1')
+        webbrowser.open('file://' + dir_file)
 
 
 def create_skill():
