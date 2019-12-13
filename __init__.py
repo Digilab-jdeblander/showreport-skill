@@ -10,8 +10,8 @@ class Showreports(MycroftSkill):
     @intent_file_handler('showreports.intent')
     def handle_showreports(self, message):
         self.speak_dialog('Opening the report')
-        dir_file = "/home/sopra/Downloads/OpenPowerBi.html?direct=1"
-        subprocess.popen('file://' + dir_file)
+        dir_file = "/home/sopra/Downloads/OpenPowerBi.html"
+        webbrowser.open('file://' + dir_file)
 
 
 def create_skill():
