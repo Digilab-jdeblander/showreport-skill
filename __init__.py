@@ -15,5 +15,5 @@ class Showreports(MycroftSkill):
 
 
 def create_skill():
-    return Showreport()
+    return Showreports()
 
